@@ -1,4 +1,4 @@
-![Travis](https://travis-ci.org/matmcclain/CI-Test.svg?branch=master)
+[![Build Status](https://travis-ci.org/matmcclain/CI-Test.svg?branch=master)](https://travis-ci.org/matmcclain/CI-Test)
 # lucid-web-redirects
 
 lucid-web-redirects allows the user to put all of their redirects into a JSON file and this package will perform the redirect.
