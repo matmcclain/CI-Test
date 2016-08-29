@@ -4,7 +4,8 @@
     "description": "Manages redirects through the redirects.json file in the root directory",
     "main": "lib/index.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "test": "mocha -R spec ./test/test.js",
+        "lint": "eslint ./lib/**"
     },
     "repository": {
         "type": "git",
@@ -18,14 +19,12 @@
     "dependencies": {
         "url": "0.11.0"
     },
-    "scripts": {
-        "test": "mocha -R spec ./test/test.js"
-    },
     "devDependencies": {
         "chai": "^3.5.0",
+        "eslint": "^3.4.0",
         "express": "^4.14.0",
         "mocha": "^2.5.3",
         "supertest": "^1.2.0"
     },
     "homepage": "https://github.com/matmcclain/CI-Test#readme"
-} 
+}
