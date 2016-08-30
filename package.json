@@ -17,8 +17,7 @@
     "url": "https://github.com/matmcclain/CI-Test/issues"
   },
   "dependencies": {
-    "url": "0.11.0",
-    "cookie-signature": "1.0.3"
+    "url": "0.11.0"
   },
   "devDependencies": {
     "chai": "^3.5.0",
