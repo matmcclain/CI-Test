@@ -37,7 +37,7 @@
             "httpStatusCode": "302"
 	}
     ,
-        {
+        { 
             "url": "",
             "redirectToUrl": "/test6",
             "matchType": "regex",
