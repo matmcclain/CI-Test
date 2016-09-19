@@ -11,7 +11,7 @@ var appredirects = require('lucid-web-redirects')(app);**
 
 **This package requires a file named redirects.json to be placed in the root directory of your website.**
 
-Here is a JSON example:  
+Here is a JSON example: 
 
 {  
     "redirects": [  
