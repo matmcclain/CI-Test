@@ -9,4 +9,3 @@ script:
   - npm run lint
   - nsp check
   - npm test
-  
