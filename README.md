@@ -1,6 +1,7 @@
 [![Build Status](https://travis-ci.org/matmcclain/CI-Test.svg?branch=master)](https://travis-ci.org/matmcclain/CI-Test)
-# CI-Test
 
+[ ![Codeship Status for matmcclain/CI-Test](https://codeship.com/projects/050741e0-6333-0134-4c80-6e50d6d701bc/status?branch=master)](https://codeship.com/projects/175298)
+# CI-Test
 lucid-web-redirects allows the user to put all of their redirects into a JSON file and this package will perform the redirect.
 
 After the app is created place this line of code to use this package  
