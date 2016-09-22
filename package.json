@@ -2,7 +2,7 @@
   "name": "lucid-web-redirects",
   "version": "0.0.1",
   "description": "Manages redirects through the redirects.json file in the root directory",
-  "main": "lib/index.js",
+  "main": "lib/index.js", 
   "scripts": {
     "test": "mocha -R spec ./test/test.js",
     "lint": "eslint ./lib/**"
