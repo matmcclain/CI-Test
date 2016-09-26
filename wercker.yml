@@ -1,4 +1,4 @@
-box: wercker/nodejs
+box: nodesource/trusty:5.1
 dev:
   steps:
     - npm-install
