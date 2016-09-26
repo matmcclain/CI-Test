@@ -1,32 +1,13 @@
-box: node:4.2.6-slim
+box: wercker/nodejs
 dev:
   steps:
     - npm-install
-    - internal/watch:
-        code: node app.js
-        reload: true
-
-# Build definition
-build:
-  # The steps that will be executed on build
-  steps:
-    - script:
-        code: export NODE_ENV='testing'
-    # A step that executes `npm install` command
-    - npm-install
-    # A step that executes `npm test` command
     - npm-test
-  #  - npm run lint
-  #  - nsp check
-    # A custom script step, name value is used in the UI
-    # and the code value contains the command that get executed
+ #   - internal/watch:
+  #      code: node app.js
+  #      reload: true
     - script:
         code: npm run lint
         code: nsp check
-   # - script:
-     #   name: echo nodejs lint
-    #    code: |
-     #     echo "npm run lint"
-     #     echo "nsp check"
-     #     echo "node version $(node -v) running"
-     #     echo "npm version $(npm -v) running"
+
+
