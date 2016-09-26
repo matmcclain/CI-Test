@@ -21,9 +21,11 @@ build:
     # A custom script step, name value is used in the UI
     # and the code value contains the command that get executed
     - script:
-        name: echo nodejs lint
-        code: |
-          echo "npm run lint"
+        code: npm run lint
+   # - script:
+     #   name: echo nodejs lint
+    #    code: |
+     #     echo "npm run lint"
      #     echo "nsp check"
      #     echo "node version $(node -v) running"
      #     echo "npm version $(npm -v) running"
