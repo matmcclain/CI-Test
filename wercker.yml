@@ -1,8 +1,8 @@
 box: nodesource/trusty:5.1
 dev:
   steps:
-    - npm-install
-    - npm-test
+ #   - npm-install
+ #   - npm-test
  #   - internal/watch:
   #      code: node app.js
   #      reload: true
@@ -15,8 +15,8 @@ dev:
 build:
   # The steps that will be executed on build
   steps:
-    - script:
-        code: export NODE_ENV='testing'
+#    - script:
+ #       code: export NODE_ENV='testing'
     # A step that executes `npm install` command
     - npm-install
     # A step that executes `npm test` command
