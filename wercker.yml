@@ -16,7 +16,7 @@ build:
   # The steps that will be executed on build
   steps:
   
-   - script:
+    - script:
         code: export NODE_ENV='testing'
  
     - npm-install
