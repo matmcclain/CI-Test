@@ -1,8 +1,7 @@
 box: nodesource/trusty:5.1
 dev:
   steps:
- #   - npm-install
- #   - npm-test
+    - npm-install
  #   - internal/watch:
   #      code: node app.js
   #      reload: true
