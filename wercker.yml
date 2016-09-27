@@ -6,9 +6,9 @@ dev:
  #   - internal/watch:
   #      code: node app.js
   #      reload: true
-    - script:
-        code: npm run lint
-        code: nsp check
+ #   - script:
+  #      code: npm run lint
+  #      code: nsp check
 
 
 # Build definition
@@ -21,6 +21,9 @@ build:
     - npm-install
     # A step that executes `npm test` command
     - npm-test
+    - npm-install:
+        package: nsp
+        strict-ssl: false
   #  - npm run lint
   #  - nsp check
     # A custom script step, name value is used in the UI
