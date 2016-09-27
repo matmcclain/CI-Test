@@ -15,6 +15,7 @@ dev:
 build:
   # The steps that will be executed on build
   steps:
+    - npm-install
     - npm-test
     - script:
         code: npm run lint
