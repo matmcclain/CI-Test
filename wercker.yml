@@ -20,6 +20,7 @@ build:
     - npm-install
     - npm-test
     - script:
+        name: run lint
         code: npm run lint
     - script:
       name: install nsp
