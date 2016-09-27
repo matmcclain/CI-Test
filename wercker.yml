@@ -23,6 +23,11 @@ build:
     - npm-test
     - script:
         code: npm run lint
+                
+    - npm-install:
+        package: nsp
+        strict-ssl: false
+    - script:
         code: nsp check
 #    - script:
  #       code: export NODE_ENV='testing'
