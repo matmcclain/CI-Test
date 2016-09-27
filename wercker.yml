@@ -2,6 +2,10 @@ box: nodesource/trusty:5.1
 dev:
   steps:
     - npm-install
+    - npm-test
+    - script:
+        code: npm run lint
+        code: nsp check
  #   - internal/watch:
   #      code: node app.js
   #      reload: true
@@ -19,17 +23,17 @@ build:
     # A step that executes `npm install` command
     - npm-install
     # A step that executes `npm test` command
-    - npm-test
-    - npm-install:
-        package: nsp
-        strict-ssl: false
+#    - npm-test
+#    - npm-install:
+#        package: nsp
+#        strict-ssl: false
   #  - npm run lint
   #  - nsp check
     # A custom script step, name value is used in the UI
     # and the code value contains the command that get executed
-    - script:
-        code: npm run lint
-        code: nsp check
+#   - script:
+ #       code: npm run lint
+ #       code: nsp check
    # - script:
      #   name: echo nodejs lint
     #    code: |
